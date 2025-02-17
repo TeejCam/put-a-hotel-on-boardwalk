@@ -9,6 +9,51 @@ public class App {
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        GenericNode<String> firstNode = new GenericNode<>("Go");
+        GenericCircularLinkedList<String> monopolyBoard = new GenericCircularLinkedList<>(firstNode);
+        monopolyBoard.append(new GenericNode<>("Mediteranean Avenue"));
+        monopolyBoard.append(new GenericNode<>("Community Chest"));
+        monopolyBoard.append(new GenericNode<>("Baltic Avenue"));
+        monopolyBoard.append(new GenericNode<>("Income Tax"));
+        monopolyBoard.append(new GenericNode<>("Reading Railroad"));
+        monopolyBoard.append(new GenericNode<>("Oriental Avenue"));
+        monopolyBoard.append(new GenericNode<>("Chance"));
+        monopolyBoard.append(new GenericNode<>("Vermont Avenue"));
+        monopolyBoard.append(new GenericNode<>("Connecticut Avenue"));
+        monopolyBoard.append(new GenericNode<>("In Jail/Just Visiting"));
+        monopolyBoard.append(new GenericNode<>("St Charles Place"));
+        monopolyBoard.append(new GenericNode<>("Electric Company"));
+        monopolyBoard.append(new GenericNode<>("States Avenue"));
+        monopolyBoard.append(new GenericNode<>("Virginia Avenue"));
+        monopolyBoard.append(new GenericNode<>("Pennsylvania Railroad"));
+        monopolyBoard.append(new GenericNode<>("St. James Place"));
+        monopolyBoard.append(new GenericNode<>("Community Chest"));
+        monopolyBoard.append(new GenericNode<>("Tennessee Avenue"));
+        monopolyBoard.append(new GenericNode<>("New York Avenue"));
+        monopolyBoard.append(new GenericNode<>("Free Parking"));
+        monopolyBoard.append(new GenericNode<>("Kentucky Avenue"));
+        monopolyBoard.append(new GenericNode<>("Chance"));
+        monopolyBoard.append(new GenericNode<>("Indiana Avenue"));
+        monopolyBoard.append(new GenericNode<>("Illinois Avenue"));
+        monopolyBoard.append(new GenericNode<>("B. & O. Railroad"));
+        monopolyBoard.append(new GenericNode<>("Atlantic Avenue"));
+        monopolyBoard.append(new GenericNode<>("Ventnor Avenue"));
+        monopolyBoard.append(new GenericNode<>("Water Works"));
+        monopolyBoard.append(new GenericNode<>("Marvin Gardens"));
+        monopolyBoard.append(new GenericNode<>("Go To Jail"));
+        monopolyBoard.append(new GenericNode<>("Pacific Avenue"));
+        monopolyBoard.append(new GenericNode<>("North Carolina Avenue"));
+        monopolyBoard.append(new GenericNode<>("Community Chest"));
+        monopolyBoard.append(new GenericNode<>("Pennsylvania Avenue"));
+        monopolyBoard.append(new GenericNode<>("Short Line"));
+        monopolyBoard.append(new GenericNode<>("Chance"));
+        monopolyBoard.append(new GenericNode<>("Park Place"));
+        monopolyBoard.append(new GenericNode<>("Luxury Tax"));
+        monopolyBoard.append(new GenericNode<>("BoardWalk"));
+
+        monopolyBoard.startFromBeginning();
+        System.out.println(monopolyBoard.getCurrentData());
+        monopolyBoard.step();
+        System.out.println(monopolyBoard.getCurrentData());
     }
 }

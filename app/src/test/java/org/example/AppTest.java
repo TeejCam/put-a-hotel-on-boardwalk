@@ -5,10 +5,26 @@ package org.example;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+//import org.junit.jupiter.api.BeforeEach;
 
 class AppTest {
-    @Test void appHasAGreeting() {
+    @Test void testEmptyList()
+    {
+        GenericCircularLinkedList<Integer> list = new GenericCircularLinkedList<>(null);
+        assertNull(list.last);
+    }
+
+    @Test void testAppend() 
+    {
+        GenericCircularLinkedList<Integer> list = new GenericCircularLinkedList<>(null);
+        list.append(new GenericNode<>(1));
+        assertEquals(1, list.getCurrentData());
+    }
+
+    
+    /*@Test void appHasAGreeting() {
         App classUnderTest = new App();
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
-    }
+    }*/
 }
